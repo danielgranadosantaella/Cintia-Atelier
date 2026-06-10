@@ -788,6 +788,31 @@ p + p { margin-top: .875rem; }
   font-style: italic;
 }
 
+/* WhatsApp CTA button (replaces form when form is inactive) */
+.btn-whatsapp-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: .875rem;
+  padding: 1.1rem 2rem;
+  background: #25D366;
+  color: #fff;
+  border-radius: 4px;
+  font-family: var(--sans);
+  font-size: 1.0625rem;
+  font-weight: 600;
+  letter-spacing: .01em;
+  box-shadow: 0 6px 30px rgba(37,211,102,0.35);
+  transition: transform .22s var(--ease-out), box-shadow .22s var(--ease-out), background .2s;
+  white-space: nowrap;
+}
+.btn-whatsapp-cta:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 40px rgba(37,211,102,0.5);
+  background: #1ebe5d;
+}
+.btn-whatsapp-cta:active { transform: translateY(0); }
+.btn-whatsapp-cta svg { flex-shrink: 0; }
+
 /* Contact form */
 .contacto__form {
   display: flex;
