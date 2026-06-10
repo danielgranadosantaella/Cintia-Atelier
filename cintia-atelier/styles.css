@@ -1007,7 +1007,7 @@ p + p { margin-top: .875rem; }
   margin: auto;
   border: none;
   background: rgba(30,22,12,0.96);
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   padding: 0;

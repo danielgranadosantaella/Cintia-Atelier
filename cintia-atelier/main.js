@@ -74,7 +74,7 @@
     const hero = $(".hero");
     if (!hero) return;
     // Trigger reveal classes immediately for hero elements
-    $$(".hero .reveal", hero).forEach((el, i) => {
+    $$(".reveal", hero).forEach((el, i) => {
       setTimeout(() => el.classList.add("is-visible"), 200 + i * 120);
     });
     // Subtle ken-burns once loaded
@@ -87,7 +87,7 @@
 
   /* ── Scroll reveals ──────────────────────────────────────── */
   function initReveals() {
-    const els = $$(".reveal:not(.hero .reveal)");
+    const els = $$(".reveal").filter(el => !el.closest(".hero"));
     if (!els.length) return;
 
     const io = new IntersectionObserver(entries => {
@@ -175,6 +175,7 @@
     }
 
     function close() {
+      if (!dialog.open) return;
       dialog.close();
       document.body.style.overflow = "";
       const trigger = document.querySelector(`[data-portfolio-item="${current}"]`);
@@ -186,15 +187,17 @@
       if (btn) open(parseInt(btn.dataset.portfolioItem, 10));
     });
 
-    btnClose.addEventListener("click", close);
-    btnPrev.addEventListener("click",  () => open(current - 1));
-    btnNext.addEventListener("click",  () => open(current + 1));
+    btnClose.addEventListener("click", e => { e.stopPropagation(); close(); });
+    btnPrev.addEventListener("click",  e => { e.stopPropagation(); open(current - 1); });
+    btnNext.addEventListener("click",  e => { e.stopPropagation(); open(current + 1); });
 
     dialog.addEventListener("click", e => { if (e.target === dialog) close(); });
 
+    // Handle native Escape key via cancel event (fires before dialog closes itself)
+    dialog.addEventListener("cancel", e => { e.preventDefault(); close(); });
+
     document.addEventListener("keydown", e => {
       if (!dialog.open) return;
-      if (e.key === "Escape")     { e.preventDefault(); close(); }
       if (e.key === "ArrowLeft")  { e.preventDefault(); open(current - 1); }
       if (e.key === "ArrowRight") { e.preventDefault(); open(current + 1); }
     });
