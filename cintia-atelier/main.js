@@ -294,7 +294,7 @@
       if (!a.getAttribute("rel")) a.setAttribute("rel", "noopener noreferrer");
     });
     // Wire dynamic brand links
-    const waLinks = $$('a[href*="wa.me/34000000000"]');
+    const waLinks = $$('a[href*="wa.me/34677733480"]');
     waLinks.forEach(a => { a.href = data.wa || a.href; });
   }
 

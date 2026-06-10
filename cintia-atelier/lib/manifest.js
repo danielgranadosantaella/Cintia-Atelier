@@ -3,7 +3,7 @@
   window.__CINTIA__ = {
     brand:   "Cintia Atelier",
     tagline: "Tapicería artesanal a medida · Marbella",
-    wa:      "https://wa.me/34000000000",
+    wa:      "https://wa.me/34677733480",
     email:   "hola@cintiaatelier.com",
     etsy:    "https://www.etsy.com/shop/CintiaAtelier",
     ig:      "https://www.instagram.com/cintiaatelier",
