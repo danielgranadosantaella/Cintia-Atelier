@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Créditos fotográficos · Cintia Atelier</title>
+  <link rel="stylesheet" href="styles.css?v=20260610">
+  <style>
+    .credits-page { padding-block: 6rem 4rem; }
+    .credits-page h1 { font-family: var(--serif); font-size: clamp(1.8rem,4vw,3rem); margin-bottom:1.5rem; }
+    .credits-page p { color: var(--ink-mute); margin-bottom:1.5rem; line-height:1.7; }
+    .credits-list { display:flex; flex-direction:column; gap:.75rem; margin-top:2rem; }
+    .credits-list li { font-size:.9rem; color:var(--ink-soft); line-height:1.6; padding:.75rem; background:var(--bg-alt); border-radius:2px; }
+    .credits-list a { color:var(--accent); }
+    .credits-list a:hover { text-decoration:underline; }
+    .back-link { display:inline-flex; align-items:center; gap:.4rem; font-size:.875rem; font-weight:500; letter-spacing:.04em; color:var(--accent); margin-bottom:2.5rem; }
+    .back-link:hover { text-decoration:underline; }
+  </style>
+</head>
+<body>
+  <nav class="nav is-scrolled" role="navigation" aria-label="Navegación">
+    <div class="nav__inner container">
+      <a class="nav__logo" href="index.html">
+        <span class="nav__logo-text" style="color:var(--ink)">Cintia Atelier</span>
+      </a>
+    </div>
+  </nav>
+
+  <main class="credits-page" style="padding-top:calc(var(--nav-h) + 4rem)">
+    <div class="container" style="max-width:720px">
+      <a href="index.html" class="back-link">← Volver al inicio</a>
+      <h1>Créditos fotográficos</h1>
+      <p>
+        Las imágenes de producción propia son propiedad de Cintia Atelier. Las imágenes de
+        archivo utilizadas durante el desarrollo son placeholders que serán reemplazados por
+        fotografías del trabajo real de Cintia.
+      </p>
+      <p>
+        Cuando se utilicen imágenes de terceros bajo licencia Creative Commons (vía
+        <a href="https://openverse.org" target="_blank" rel="noopener">Openverse</a>),
+        los créditos completos aparecerán en esta página.
+      </p>
+      <ul class="credits-list" id="credits-list">
+        <li>
+          <strong>Imágenes de placeholder</strong> — Generadas para fase de desarrollo.
+          Serán reemplazadas por fotografías originales del taller y los proyectos de Cintia Atelier.
+        </li>
+      </ul>
+    </div>
+  </main>
+</body>
+</html>

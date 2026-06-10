@@ -1,0 +1,522 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cintia Atelier — Tapicería artesanal a medida · Marbella</title>
+  <meta name="description" content="Tapicería y confección artesanal a medida en Marbella. Cabeceros tapizados, cortinas y restauración de muebles. Hecho a mano, pieza a pieza.">
+
+  <!-- Open Graph -->
+  <meta property="og:type"        content="website">
+  <meta property="og:title"       content="Cintia Atelier — Tapicería artesanal a medida">
+  <meta property="og:description" content="Cabeceros tapizados, cortinas y restauración de muebles. Hecho a mano en Marbella.">
+  <meta property="og:image"       content="assets/img/hero.png">
+  <meta property="og:locale"      content="es_ES">
+
+  <!-- Preload hero -->
+  <link rel="preload" as="image" href="assets/img/hero.png" fetchpriority="high">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Inter:wght@300;400;500;600&display=swap">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css?v=20260610">
+
+  <!-- Google Analytics (activar cuando el dominio esté listo)
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer=window.dataLayer||[];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js',new Date());
+    gtag('config','G-XXXXXXXXXX');
+  </script>
+  -->
+</head>
+<body>
+  <a href="#sobre" class="skip-link">Saltar al contenido</a>
+
+  <!-- ── NAV ──────────────────────────────────────────────── -->
+  <nav class="nav" id="nav" role="navigation" aria-label="Navegación principal">
+    <div class="nav__inner container">
+      <a class="nav__logo" href="#inicio" aria-label="Cintia Atelier — inicio">
+        <span class="nav__logo-text">Cintia Atelier</span>
+      </a>
+
+      <!-- Desktop links -->
+      <ul class="nav__links" role="list">
+        <li><a href="#sobre">Sobre Cintia</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#portfolio">Proyectos</a></li>
+        <li><a href="#proceso">Cómo trabajamos</a></li>
+        <li>
+          <a href="#contacto" class="btn btn-primary nav__cta">Pide presupuesto</a>
+        </li>
+      </ul>
+
+      <!-- Hamburger (mobile) -->
+      <button
+        class="nav__hamburger"
+        id="nav-hamburger"
+        aria-expanded="false"
+        aria-controls="nav-menu"
+        aria-label="Abrir menú"
+      >
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Mobile menu overlay -->
+  <div class="nav__menu" id="nav-menu" aria-label="Menú móvil" role="dialog" aria-modal="true">
+    <a href="#sobre">Sobre Cintia</a>
+    <a href="#servicios">Servicios</a>
+    <a href="#portfolio">Proyectos</a>
+    <a href="#proceso">Cómo trabajamos</a>
+    <a href="#contacto" class="btn btn-primary">Pide presupuesto</a>
+  </div>
+
+  <main id="main">
+
+    <!-- ── 1. HERO ──────────────────────────────────────────── -->
+    <section class="hero" id="inicio" aria-label="Portada">
+      <picture class="hero__bg" aria-hidden="true">
+        <source media="(max-width: 540px)" srcset="assets/img/hero-mobile.png">
+        <img
+          src="assets/img/hero.png"
+          alt=""
+          fetchpriority="high"
+          loading="eager"
+          decoding="sync"
+        >
+      </picture>
+      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="hero__grain"   aria-hidden="true"></div>
+
+      <div class="hero__content container">
+        <p class="hero__kicker reveal">Marbella &middot; Hecho a mano</p>
+        <h1 class="hero__title reveal">
+          Tapicería<br><em>artesanal</em><br>a medida.
+        </h1>
+        <p class="hero__sub reveal">
+          Cabeceros, cortinas y restauración. Cada pieza, tejida con el tiempo que merece.
+        </p>
+        <div class="hero__actions reveal">
+          <a href="#portfolio" class="btn btn-primary">Ver proyectos</a>
+          <a href="#contacto"  class="btn btn-ghost">Pide presupuesto</a>
+        </div>
+      </div>
+
+      <a href="#sobre" class="hero__scroll-hint" aria-label="Desplazarse hacia abajo">
+        <span class="hero__scroll-line" aria-hidden="true"></span>
+      </a>
+    </section>
+
+    <!-- ── 2. SOBRE CINTIA ──────────────────────────────────── -->
+    <section class="sobre" id="sobre" aria-labelledby="sobre-heading">
+      <div class="sobre__inner container">
+        <div class="sobre__text">
+          <p class="kicker reveal">Sobre Cintia</p>
+          <h2 id="sobre-heading" class="reveal">
+            Un oficio heredado,<br><em>una firma propia.</em>
+          </h2>
+          <div class="sobre__body reveal">
+            <p>
+              Cintia creció rodeada de telas, agujas y el sonido de la máquina de
+              coser de su padre. Aprendió el oficio en este mismo taller —los
+              mismos gestos, el mismo cuidado— y con los años fue sumando su propia
+              voz al lenguaje familiar de la tapicería.
+            </p>
+            <p>
+              Hoy, desde Marbella, diseña y confecciona a medida para clientes que
+              saben que hay piezas que no se compran por internet. Se habla, se
+              diseña juntos, y se hace bien.
+            </p>
+            <!-- PLACEHOLDER: reemplazar con historia definitiva de Cintia -->
+          </div>
+          <a href="#contacto" class="btn btn-text reveal">Hablar con Cintia →</a>
+        </div>
+
+        <div class="sobre__images" aria-hidden="true">
+          <div class="sobre__img-portrait reveal" data-reveal-delay="150">
+            <img
+              src="assets/img/sobre-portrait.png"
+              alt="[📷 Foto de Cintia — pendiente de añadir]"
+              loading="lazy"
+              decoding="async"
+            >
+          </div>
+          <div class="sobre__img-studio reveal" data-reveal-delay="300">
+            <img
+              src="assets/img/sobre-taller.png"
+              alt="[📷 Foto del taller — pendiente de añadir]"
+              loading="lazy"
+              decoding="async"
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 3. SERVICIOS ─────────────────────────────────────── -->
+    <section class="servicios" id="servicios" aria-labelledby="servicios-heading">
+      <div class="container">
+        <header class="section-header">
+          <p class="kicker reveal">Servicios</p>
+          <h2 id="servicios-heading" class="reveal">
+            Lo que hacemos,<br><em>y cómo lo hacemos.</em>
+          </h2>
+        </header>
+
+        <div class="servicios__grid" role="list">
+          <article class="servicio-card reveal" role="listitem" data-reveal-delay="0">
+            <div class="servicio-card__img">
+              <img
+                src="assets/img/servicio-cabecero.png"
+                alt="[📷 Cabecero tapizado — foto pendiente]"
+                loading="lazy" decoding="async"
+              >
+            </div>
+            <div class="servicio-card__body">
+              <h3>Cabeceros tapizados</h3>
+              <p>
+                Diseñados a medida para tu cama y tu espacio. Elegimos juntos la tela,
+                la forma y el relleno. Sin catálogo: cada cabecero es único.
+              </p>
+            </div>
+          </article>
+
+          <article class="servicio-card reveal" role="listitem" data-reveal-delay="100">
+            <div class="servicio-card__img">
+              <img
+                src="assets/img/servicio-cortinas.png"
+                alt="[📷 Cortinas confeccionadas — foto pendiente]"
+                loading="lazy" decoding="async"
+              >
+            </div>
+            <div class="servicio-card__body">
+              <h3>Cortinas y tapizados</h3>
+              <p>
+                Confección a medida de cortinas, cojines y tapizados de sillas y
+                sofás. Con tu tela o con la nuestra: trabajamos con lo que tú traigas.
+              </p>
+            </div>
+          </article>
+
+          <article class="servicio-card reveal" role="listitem" data-reveal-delay="200">
+            <div class="servicio-card__img">
+              <img
+                src="assets/img/servicio-restauracion.png"
+                alt="[📷 Mueble restaurado — foto pendiente]"
+                loading="lazy" decoding="async"
+              >
+            </div>
+            <div class="servicio-card__body">
+              <h3>Restauración de muebles</h3>
+              <p>
+                Dale una segunda vida a piezas con historia. Butacas, sillas,
+                cabeceros heredados. Reparamos la estructura y renovamos el tapizado.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 4. PORTFOLIO ─────────────────────────────────────── -->
+    <section class="portfolio" id="portfolio" aria-labelledby="portfolio-heading">
+      <div class="container">
+        <header class="section-header">
+          <p class="kicker reveal">Proyectos</p>
+          <h2 id="portfolio-heading" class="reveal">Trabajo reciente.</h2>
+          <p class="section-sub reveal">
+            Haz clic en cada imagen para ver los detalles del proyecto.
+          </p>
+        </header>
+        <!-- Grid injected by main.js from manifest.js -->
+        <div class="portfolio__grid" role="list" aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- ── 5. PROCESO ───────────────────────────────────────── -->
+    <section class="proceso" id="proceso" aria-labelledby="proceso-heading">
+      <div class="container">
+        <header class="section-header">
+          <p class="kicker reveal">Cómo trabajamos</p>
+          <h2 id="proceso-heading" class="reveal">
+            Del primer mensaje<br><em>a la pieza terminada.</em>
+          </h2>
+        </header>
+
+        <ol class="proceso__steps" role="list">
+          <li class="proceso-step reveal" data-reveal-delay="0">
+            <span class="proceso-step__num" aria-hidden="true">01</span>
+            <div class="proceso-step__body">
+              <h3>Contacto</h3>
+              <p>
+                Nos cuentas tu idea, el espacio y el estilo. Por WhatsApp, email
+                o formulario. Sin compromiso.
+              </p>
+            </div>
+          </li>
+          <li class="proceso-step reveal" data-reveal-delay="100">
+            <span class="proceso-step__num" aria-hidden="true">02</span>
+            <div class="proceso-step__body">
+              <h3>Diseño y materiales</h3>
+              <p>
+                Elegimos juntos la tela, el color y las medidas exactas. Cintia
+                asesora según el espacio y tu estilo.
+              </p>
+            </div>
+          </li>
+          <li class="proceso-step reveal" data-reveal-delay="200">
+            <span class="proceso-step__num" aria-hidden="true">03</span>
+            <div class="proceso-step__body">
+              <h3>Fabricación artesanal</h3>
+              <p>
+                Cintia confecciona la pieza a mano en el taller de Marbella. Cada
+                costura, cada detalle, a su ritmo.
+              </p>
+            </div>
+          </li>
+          <li class="proceso-step reveal" data-reveal-delay="300">
+            <span class="proceso-step__num" aria-hidden="true">04</span>
+            <div class="proceso-step__body">
+              <h3>Entrega</h3>
+              <p>
+                Instalación en Marbella y la Costa del Sol, o envío a cualquier
+                punto. También para pedidos de Etsy.
+              </p>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ── 6. MATERIALES ────────────────────────────────────── -->
+    <section class="materiales" id="materiales" aria-labelledby="materiales-heading">
+      <div class="materiales__inner">
+        <div class="materiales__img reveal">
+          <img
+            src="assets/img/materiales.png"
+            alt="[📷 Muestras de telas: lino, bouclé, terciopelo y algodón — foto pendiente]"
+            loading="lazy" decoding="async"
+          >
+        </div>
+        <div class="materiales__text container">
+          <p class="kicker reveal">Materiales</p>
+          <h2 id="materiales-heading" class="reveal">
+            Telas seleccionadas<br><em>o las tuyas propias.</em>
+          </h2>
+          <p class="reveal">
+            Trabajamos con lino natural, bouclé, terciopelo, algodón y tejidos
+            técnicos para exterior. Si tienes una tela especial —heredada,
+            comprada en viaje, encontrada en una tienda vintage— tráela.
+            La hacemos funcionar.
+          </p>
+          <a href="#contacto" class="btn btn-primary reveal">
+            Consultar telas disponibles
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 7. TESTIMONIOS (oculto hasta tener contenido real) ── -->
+    <section class="testimonios" id="testimonios" hidden aria-hidden="true"
+             aria-labelledby="testimonios-heading">
+      <div class="container">
+        <header class="section-header">
+          <p class="kicker">Clientes</p>
+          <h2 id="testimonios-heading">
+            Lo que dicen<br><em>quienes ya han confiado.</em>
+          </h2>
+        </header>
+        <!-- Injected by main.js — descomentar sección al activar -->
+        <div class="testimonios__grid" data-testimonios role="list"></div>
+      </div>
+    </section>
+
+    <!-- ── 8. CONTACTO ──────────────────────────────────────── -->
+    <section class="contacto" id="contacto" aria-labelledby="contacto-heading">
+      <div class="contacto__inner container">
+        <div class="contacto__info">
+          <p class="kicker reveal">Contacto</p>
+          <h2 id="contacto-heading" class="reveal">
+            Cuéntanos<br><em>tu proyecto.</em>
+          </h2>
+
+          <ul class="contacto__details reveal" role="list">
+            <li>
+              <strong>WhatsApp</strong>
+              <!-- PLACEHOLDER: reemplazar número cuando esté activo -->
+              <a href="https://wa.me/34000000000" aria-label="WhatsApp de Cintia Atelier">
+                [Número pendiente de activar]
+              </a>
+            </li>
+            <li>
+              <strong>Email</strong>
+              <a href="mailto:hola@cintiaatelier.com">hola@cintiaatelier.com</a>
+            </li>
+            <li>
+              <strong>Taller</strong>
+              <span>Marbella, Málaga</span>
+            </li>
+          </ul>
+
+          <p class="contacto__note reveal">Respondo en menos de 24&nbsp;horas.</p>
+        </div>
+
+        <div class="contacto__form-wrap reveal" data-reveal-delay="150">
+          <!-- PLACEHOLDER: reemplazar XXXXXXXX con el ID real de Formspree -->
+          <form
+            class="contacto__form"
+            action="https://formspree.io/f/XXXXXXXX"
+            method="POST"
+            data-form
+            novalidate
+          >
+            <div class="form-row">
+              <label for="nombre">Nombre</label>
+              <input
+                type="text" id="nombre" name="nombre"
+                required autocomplete="name"
+                placeholder="Tu nombre"
+              >
+            </div>
+            <div class="form-row">
+              <label for="email">Email</label>
+              <input
+                type="email" id="email" name="email"
+                required autocomplete="email"
+                placeholder="tu@email.com"
+              >
+            </div>
+            <div class="form-row">
+              <label for="tipo">Tipo de proyecto</label>
+              <select id="tipo" name="tipo" required>
+                <option value="" disabled selected>¿Qué necesitas?</option>
+                <option value="cabecero">Cabecero tapizado</option>
+                <option value="cortinas">Cortinas y tapizados</option>
+                <option value="restauracion">Restauración de muebles</option>
+                <option value="otro">Otro proyecto</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <label for="mensaje">Cuéntame</label>
+              <textarea
+                id="mensaje" name="mensaje"
+                rows="4" required
+                placeholder="Describe tu proyecto: medidas aproximadas, estilo que buscas, plazo…"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-submit" data-submit-btn>
+              <span class="btn-submit-label">Enviar mensaje</span>
+              <span class="btn-submit-sending" aria-hidden="true">Enviando…</span>
+            </button>
+            <p class="form-success" data-form-success aria-live="polite" hidden>
+              Mensaje recibido. Te respondo en breve — suelo tardar menos de 24 horas.
+            </p>
+            <p class="form-error" data-form-error aria-live="polite" hidden>
+              Algo salió mal. Prueba por WhatsApp o escríbeme a hola@cintiaatelier.com.
+            </p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ── FOOTER ────────────────────────────────────────────── -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+
+      <!-- Etsy banner -->
+      <div class="footer__etsy reveal">
+        <p>¿Buscas algo disponible ahora?</p>
+        <!-- PLACEHOLDER: reemplazar con URL de Etsy cuando esté creada -->
+        <a
+          href="https://www.etsy.com/shop/CintiaAtelier"
+          class="footer__etsy-link"
+          target="_blank" rel="noopener noreferrer"
+        >
+          Visita nuestra tienda en Etsy →
+        </a>
+      </div>
+
+      <div class="footer__main">
+        <div class="footer__brand">
+          <p class="footer__logo">Cintia Atelier</p>
+          <p class="footer__tagline">Tapicería artesanal en Marbella</p>
+        </div>
+        <nav class="footer__nav" aria-label="Navegación pie de página">
+          <a href="#sobre">Sobre Cintia</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#portfolio">Proyectos</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+        <div class="footer__social">
+          <!-- PLACEHOLDER: activar cuando Instagram esté creado -->
+          <a
+            href="https://www.instagram.com/cintiaatelier"
+            target="_blank" rel="noopener noreferrer"
+            aria-label="Instagram de Cintia Atelier"
+          >
+            Instagram
+          </a>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p>&copy; 2026 Cintia Atelier &middot; Marbella, Málaga</p>
+        <a href="creditos.html" class="footer__credits">
+          Créditos fotográficos →
+        </a>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ── WHATSAPP FAB ───────────────────────────────────────── -->
+  <!-- PLACEHOLDER: reemplazar número en href -->
+  <a
+    href="https://wa.me/34000000000"
+    class="whatsapp-fab"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="Contactar por WhatsApp"
+    style="opacity:0"
+  >
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="28" height="28" aria-hidden="true">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/>
+    </svg>
+  </a>
+
+  <!-- ── LIGHTBOX ──────────────────────────────────────────── -->
+  <dialog class="lightbox" id="lightbox" aria-label="Visor de proyecto">
+    <button class="lightbox__close" id="lightbox-close" aria-label="Cerrar visor">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <path d="M18 6L6 18M6 6l12 12"/>
+      </svg>
+    </button>
+    <button class="lightbox__prev" id="lightbox-prev" aria-label="Proyecto anterior">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <path d="M15 18l-6-6 6-6"/>
+      </svg>
+    </button>
+    <button class="lightbox__next" id="lightbox-next" aria-label="Proyecto siguiente">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <path d="M9 18l6-6-6-6"/>
+      </svg>
+    </button>
+    <figure class="lightbox__figure">
+      <img src="" alt="" id="lightbox-img" class="lightbox__img" loading="lazy">
+      <figcaption class="lightbox__caption" id="lightbox-caption"></figcaption>
+    </figure>
+  </dialog>
+
+  <!-- Scripts -->
+  <script defer src="lib/manifest.js?v=20260610"></script>
+  <script defer src="main.js?v=20260610"></script>
+</body>
+</html>
