@@ -507,10 +507,10 @@ p + p { margin-top: var(--space-3); }
   inset: 0;
   background: linear-gradient(
     to top,
-    rgba(61, 41, 32, 0.90) 0%,
-    rgba(61, 41, 32, 0.55) 40%,
-    rgba(61, 41, 32, 0.25) 75%,
-    rgba(61, 41, 32, 0.15) 100%
+    rgba(61, 41, 32, 0.72) 0%,
+    rgba(61, 41, 32, 0.38) 40%,
+    rgba(61, 41, 32, 0.15) 75%,
+    rgba(61, 41, 32, 0.08) 100%
   );
 }
 .hero__grain {
