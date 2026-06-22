@@ -935,19 +935,27 @@ p + p { margin-top: var(--space-3); }
   font-style: italic;
 }
 
+.contacto__wa-cta {
+  margin-top: var(--space-8);
+}
+
+.contacto__form-wrap {
+  min-width: 0;
+}
+
 .btn-whatsapp-cta {
   display: inline-flex;
   align-items: center;
   gap: var(--space-3);
-  padding: var(--space-5) var(--space-8);
+  padding: var(--space-4) var(--space-6);
   background: #25D366;
   color: #fff;
   border-radius: var(--radius-md);
   font-family: var(--font-body);
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-base);
   font-weight: var(--font-weight-semibold);
   letter-spacing: var(--letter-spacing-normal);
-  box-shadow: 0 6px 30px rgba(37, 211, 102, 0.35);
+  box-shadow: 0 4px 20px rgba(37, 211, 102, 0.3);
   transition: transform var(--transition-base),
               box-shadow var(--transition-base),
               background var(--transition-fast);
