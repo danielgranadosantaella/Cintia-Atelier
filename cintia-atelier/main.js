@@ -25,7 +25,7 @@
       const target = document.querySelector(id);
       if (!target) return;
       e.preventDefault();
-      const navH = parseInt(getComputedStyle(document.documentElement).getPropertyValue("--nav-h"), 10) || 68;
+      const navH = parseInt(getComputedStyle(document.documentElement).getPropertyValue("--nav-height"), 10) || 80;
       const top = target.getBoundingClientRect().top + scrollY - navH;
       window.scrollTo({
         top: Math.max(0, top),
